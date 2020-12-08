@@ -21,7 +21,6 @@ module.exports = function () {
     name: 'babel-plugin-transform-self-import',
     visitor: {
       CallExpression(path, state) {
-        const {  }
         const { callee } = path.node;
         // good enough for now
         if (callee.name === 'require') {
