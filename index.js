@@ -1,7 +1,7 @@
 const { join, normalize, dirname, relative } = require('path');
 const { sync: readPkgUp } = require('read-pkg-up');
 
-const pkgNameExp = /(^@?[^/]+\/[^/]+|[^./][^/]*)(\/.*)/;
+const pkgNameExp = /(^@[^/]+\/[^/]+|[^./][^/]*)(.*)/;
 
 const { packageJson: pkg, path: pkgPath } = readPkgUp({ normalize: false });
 const root = dirname(pkgPath);
