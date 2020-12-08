@@ -1,0 +1,25 @@
+{
+  "name": "babel-plugin-transform-package-self-reference",
+  "version": "0.1.0",
+  "description": "Transfroms package self-references by reading package.json",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conartist6/babel-plugin-transform-package-self-reference.git"
+  },
+  "keywords": [
+    "self-reference",
+    "self-import",
+    "babel",
+    "plugin"
+  ],
+  "author": "conartist6@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conartist6/babel-plugin-transform-package-self-reference/issues"
+  },
+  "homepage": "https://github.com/conartist6/babel-plugin-transform-package-self-reference#readme",
+  "dependencies": {
+    "read-pkg-up": "^7.0.1"
+  }
+}
