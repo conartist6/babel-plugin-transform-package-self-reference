@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-package-self-reference",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Transfroms package self-references by reading package.json",
   "main": "index.js",
   "repository": {
