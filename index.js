@@ -30,9 +30,9 @@ function getImportPathFromPkg(pkg, isRequire) {
 }
 
 function getSourcePath(source, state, isRequire) {
-  const { resolveTo = getImportPathFromPkg(pkg, isRequire) } = state.opts;
   const match = pkgNameExp.exec(source);
   if (match && match[1] !== null && match[1] === pkg.name) {
+    const { resolveTo = getImportPathFromPkg(pkg, isRequire) } = state.opts;
     return normalize(join(relative(dirname(state.filename), root), resolveTo, match[2]));
   } else {
     return source;
